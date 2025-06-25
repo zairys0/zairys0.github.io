@@ -31,7 +31,7 @@
     @keyframes gradientShift {
       0% { background-position: 0% 50%; }
       50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
+      100% { -position: 0% 50%; }
     }
     
     .particles {
@@ -48,7 +48,7 @@
       position: absolute;
       width: 2px;
       height: 2px;
-      background: var(--primary-alpha);
+      : var(--primary-alpha);
       border-radius: 50%;
       animation: float 6s infinite linear;
     }
@@ -74,7 +74,7 @@
       position: fixed;
       top: 0; left: 0;
       width: 100vw; height: 100vh;
-      background: var(--primary-alpha);
+      : var(--primary-alpha);
       backdrop-filter: blur(0.3px);
       z-index: -2;
       display: none;
@@ -84,7 +84,7 @@
       position: fixed;
       top: 0; left: 0;
       width: 100vw; height: 100vh;
-      background: linear-gradient(135deg, var(--bg-color), #1a0505);
+      : linear-gradient(135deg, var(--bg-color), #1a0505);
       color: var(--primary-color);
       display: flex;
       align-items: center;
@@ -146,7 +146,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       will-change: transform;
-      background: var(--primary-alpha);
+      : var(--primary-alpha);
       backdrop-filter: blur(10px);
       padding: 40px;
       border-radius: 20px;
@@ -186,8 +186,8 @@
       border-radius: 50%;
       border: 3px solid var(--primary-color);
       box-shadow: 0 0 30px var(--primary-alpha);
-      background: url('./assets/pfp/pfp.png') center/cover;
-      background-color: var(--dark-color);
+      : url('./assets/pfp/pfp.png') center/cover;
+      -color: var(--dark-color);
       animation: pfpPulse 2s ease-in-out infinite;
       margin: auto;
       flex-shrink: 0;
@@ -251,7 +251,7 @@
     .audio-player {
       margin: 10px 0;
       display: none;
-      background: var(--primary-alpha);
+      : var(--primary-alpha);
       backdrop-filter: blur(10px);
       padding: 10px;
       border-radius: 11px;
@@ -334,7 +334,7 @@
     .discord-activity {
       margin: auto;
       padding: 13px;
-      background: var(--primary-alpha);
+      : var(--primary-alpha);
       backdrop-filter: blur(10px);
       border-radius: 15px;
       border: 1px solid var(--primary-alpha);
@@ -421,7 +421,7 @@
     
     .discord-activity.offline {
       opacity: 0.6;
-      background: var(--primary-alpha);
+      : var(--primary-alpha);
       border-color: var(--primary-alpha);
     }
     
@@ -440,15 +440,15 @@
       z-index: 1;
     }
     
-    .status-online { background-color: #43b581; }
-    .status-idle { background-color: #faa61a; }
-    .status-dnd { background-color: #f04747; }
-    .status-offline { background-color: #747f8d; }
+    .status-online { -color: #43b581; }
+    .status-idle { -color: #faa61a; }
+    .status-dnd { -color: #f04747; }
+    .status-offline { -color: #747f8d; }
     
     .timeline {
       flex: 1;
       height: 6px;
-      background: var(--primary-alpha);
+      : var(--primary-alpha);
       border-radius: 3px;
       position: relative;
       cursor: pointer;
@@ -456,7 +456,7 @@
     
     .progress {
       height: 110%;
-      background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+      : linear-gradient(90deg, var(--primary-color), var(--secondary-color));
       border-radius: 4px;
       width: 2%;
       transition: width 0.1s ease;
@@ -482,7 +482,7 @@
       width: 45px;
       height: 45px;
       border-radius: 50%;
-      background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+      : linear-gradient(45deg, var(--primary-color), var(--secondary-color));
       border: none;
       cursor: pointer;
       display: flex;
@@ -507,7 +507,7 @@
       width: 125px;
       height: 8px;
       accent-color: var(--primary-color);
-      background: var(--primary-alpha);
+      : var(--primary-alpha);
       border: 2.2px solid var(--primary-color);
       border-radius: 4px;
     }
@@ -531,7 +531,7 @@
       width: 55px;
       height: 55px;
       border-radius: 10px;
-      background: var(--primary-alpha);
+      : var(--primary-alpha);
       border: 2.5px solid var(--primary-color);
       display: flex;
       align-items: center;
@@ -546,7 +546,7 @@
     .social-icon:hover {
       transform: translateY(-5px);
       box-shadow: 0 5px 20px var(--primary-alpha);
-      background: var(--primary-alpha);
+      : var(--primary-alpha);
     }
     
     #bgVideo {
@@ -568,7 +568,7 @@
       width: 50px;
       height: 50px;
       border-radius: 50%;
-      background: var(--primary-alpha);
+      : var(--primary-alpha);
       backdrop-filter: blur(10px);
       border: 2px solid var(--primary-alpha);
       color: var(--primary-color);
@@ -586,7 +586,7 @@
     }
     
     .audio-toggle:hover {
-      background: var(--primary-alpha);
+      : var(--primary-alpha);
       transform: scale(1.1);
     }
     
@@ -596,7 +596,7 @@
     
     .spark {
       position: fixed;
-      background: radial-gradient(circle, var(--primary-alpha), var(--primary-alpha));
+      : radial-gradient(circle, var(--primary-alpha), var(--primary-alpha));
       border-radius: 50%;
       pointer-events: none;
       z-index: 50;
@@ -618,7 +618,7 @@
     .time-display {
       margin: 5px;
       padding: 13px;
-      background: var(--primary-alpha);
+      : var(--primary-alpha);
       backdrop-filter: blur(10px);
       border-radius: 12px;
       border: 1px solid var(--primary-alpha);
@@ -726,7 +726,7 @@
       .discord-activity {
         margin: 0;
         padding: 15px;
-        background: var(--primary-alpha);
+        : var(--primary-alpha);
         backdrop-filter: blur(10px);
         border-radius: 15px;
         border: 1px solid var(--primary-alpha);
@@ -811,8 +811,9 @@
       </div>
   </div>
   <video id="bgVideo" loop>
-    <source src="./assets/background/background.mp4" type="video/mp4">
+    <source src="./assets//.mp4" type="video/mp4">
     <source src="./assets/background/background.gif" type="image/gif">
+    <source src="./assets/background/background.jpg" type="image/jpg">
     <canvas id="colorCanvas" style="display: none;" width="1" height="1"></canvas>
   </video>
 <script>
