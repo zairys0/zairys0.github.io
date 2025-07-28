@@ -135,10 +135,10 @@ transition: all 0.4s ease;
 }
 
 .card {
--shadow:
-0 0 10px rgba(50, 50, 50, 0.6),
-inset 0 0 10px rgba(60, 60, 60, 0.1),
-0 0 0 2px rgba(70, 70, 70, 0.5);
+box-shadow:
+ 0 0 10px rgba(50, 50, 50, 0.6),
+ inset 0 0 10px rgba(60, 60, 60, 0.1),
+ 0 0 0 2px rgba(70, 70, 70, 0.5);
 animation: cardFloat 3s ease-in-out infinite, borderPulse 2s ease-in-out infinite;
 position: fixed;
 top: 50%;
@@ -163,7 +163,7 @@ justify-content: center;
 
 @keyframes borderPulse {
 0%, 100% {
-box-shadow: 
+-shadow: 
 0 0 40px rgba(255, 150, 150, 0.3),
 inset 0 0 40px rgba(255, 158, 158, 0.05),
 0 0 0 2px rgba(255, 150, 150, 0.4);
